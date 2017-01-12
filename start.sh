@@ -2,8 +2,6 @@ shDir=$(cd "$(dirname "$0")"; pwd)
 
 cd ${shDir}/jetty/
  
-chmod +rwx ${shDir}/jre -R
-
 export PATH=${shDir}/jre/bin/
 
 java -version
