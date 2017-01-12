@@ -12,6 +12,6 @@ sed -ie 's/jdbc:hsqldb:file:~\/newcrawler\/db\/spider/jdbc:hsqldb:file:\/opt\/ne
 
 #(java ${JAVA_OPTS} -DSTOP.PORT=8504 -DSTOP.KEY=stop_jetty -jar start.jar jetty.port=8500 > /dev/null &)
 
-java ${JAVA_OPTS} -DSTOP.PORT=8504 -DSTOP.KEY=stop_jetty -jar /opt/newcrawler/jetty/start.jar jetty.port=8500 &
+java ${JAVA_OPTS} -jar /opt/newcrawler/jetty/start.jar jetty.port=8500 &
 
 echo 'test4'
